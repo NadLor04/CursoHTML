@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Video</title>
+    <title>Calendar</title>
 </head>
-<body>
-    <main>
-        <section>
-            <video src="./ultraluminaria.mp4" controls preload="auto"></video>
-        </section>
-    </main>
+<body>  
+
+    <form action="">
+        <label for="nombre">
+            <span>¿Cúal es tu nombre?</span>
+           <input type="text" name="nombre" id="nombre" autocomplete="name" required/>
+           <br><br>  
+        </label>
+        <label for="correo">
+            <span>¿Cúal es tu correo?</span>
+            <input type="email" name="correo" id="correo"  autocomplete="email" required/>
+            <br><br>  
+        </label>
+        <label for="pais">
+            <span>¿En que país vives?</span>
+            <input type="text" name="pais" id="pais"  autocomplete="country" required/>
+            <br><br>  
+        </label>
+        <label for="cp">
+            <span>¿Cúal es tu código postal?</span>
+            <input type="number" name="cp" id="cp"  autocomplete="postal-code" required/>
+            <br><br>  
+        </label>
+        <br><br>      
+        <input type="submit" value="Enviar información!">
+    </form>
+
 </body>
 </html>
